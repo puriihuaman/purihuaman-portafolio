@@ -1,0 +1,17 @@
+.container-search {
+
+
+	&__input {
+		width: calc( 100% - 38px );
+		
+		@media screen and (min-width: 64rem) {
+			width: calc( 100% - 40px );
+		}
+	}
+}
+
+.button-search {
+	padding: var(--small-padding);
+	color: var(--dark-color);
+	border-color: var(--light-color500);
+}

@@ -1,0 +1,4 @@
+extends ../includes/template
+
+append config
+	- pageTitle = "Productos"

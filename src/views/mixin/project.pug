@@ -1,0 +1,13 @@
+include button
+
+mixin card( image, title, description )
+	article.card-project
+		.card-project__image
+			img(src=`./assets/image/${image}`, alt="" class='card-project__img')
+		.card-project__container
+			.card-project__content
+				h3.card-project__title= title
+				p.card-project__description= description
+			.card-project__action
+				+button('#', 'Ver', 'card-project__show')
+				+button('#', 'GitHub', 'card-project__dowload')

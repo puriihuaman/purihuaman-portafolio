@@ -1,0 +1,40 @@
+$height-image: 200px;
+$max-width-card: 300px;
+$width-input-action: 100px;
+$width: 280px;
+
+.card-project {
+	background-color: var(--dark-color600);
+	// max-width: $max-width-card;
+	width: $width;
+	padding: var(--normal-padding);
+	border-radius: var(--border-radius);
+	box-shadow: 1px 1px 3px var(--dark-color100);
+
+	&__image{
+		height: $height-image;
+	}
+	&__img {
+		height: 100%;
+		width: 100%;
+		object-fit: cover;
+		border-radius: var(--border-radius);
+	}
+
+	&__container {
+		// background-color: var(--dark-color400);
+		padding: var(--small-padding) 0;
+	}
+	&__content {
+	}
+	&__title,
+	&__description {
+		text-align: center;
+	}
+	
+	&__action {
+		padding: var(--small-padding) 0;
+		display: flex;
+		justify-content: space-evenly;
+	}
+}

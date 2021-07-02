@@ -1,0 +1,31 @@
+-
+	var pages = [
+		{
+			title: 'Home',
+			url: 'index.html',
+		},
+		{
+			title: 'Sobre Mí',
+			url: 'about.html',
+			child: [],
+		},
+		{
+			title: 'Proyectos',
+			url: 'project.html',
+			child: [],
+		},
+		{
+			title: 'Contacto',
+			url: 'contacts.html',
+			child: [],
+		},
+	];
+
+
+nav.main-nav#main-nav
+	ul.main-menu
+		each page in pages
+			li.main-menu__item
+				a(href= page.url class='main-menu__link links' id=`${page.title.toLowerCase()}-link`)= page.title
+
+

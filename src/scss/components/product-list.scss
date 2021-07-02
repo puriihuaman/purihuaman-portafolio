@@ -1,0 +1,23 @@
+// Contenedor de productos
+.product-list {
+	padding: var(--normal-padding) 0;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr;
+	grid-auto-rows: 1fr;
+	justify-items: center;
+	gap: var(--normal-gap);
+	transition: grid-template-columns 5s;
+
+	@media screen and (min-width: 32rem) {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	@media screen and (min-width: 48rem) {
+		grid-template-columns: repeat(3, 1fr);
+	}
+
+	@media screen and (min-width: 64rem) {
+		grid-template-columns: repeat(4, 1fr);
+	}
+}

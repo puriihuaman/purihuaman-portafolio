@@ -1,0 +1,36 @@
+$widht-form: 500px;
+
+.container__form {
+	margin-top: var(--normal-padding);
+}
+
+.form {
+	background-color: var(--light-color600);
+	padding: var(--small-padding);
+	padding-bottom: var(--large-padding);
+	border-radius: var(--border-radius);
+	transition: max-width .3s;
+	
+	@media screen and (min-width: 48rem) {
+		max-width: $widht-form;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	&__field {
+		padding: var(--small-padding) 0;
+	}
+
+	&__input {
+		width: 100%;
+	}
+
+	&__button {
+		display: block;
+		margin-right: auto;
+		margin-left: auto;
+		background-color: var(--marron-color);
+		color: var(--light-color500);
+		border-color: var(--marron-color);
+	}
+}

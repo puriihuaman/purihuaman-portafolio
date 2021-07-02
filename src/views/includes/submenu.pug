@@ -1,0 +1,25 @@
+-
+	var submenu = [
+		{
+			title: 'Tortas',
+			url: 'cake.html',
+		},
+		{
+			title: 'Postres',
+			url: 'desserts.html',
+		},
+		{
+			title: 'Snacks',
+			url: 'snacks.html',
+		},
+		{
+			title: 'Jugo',
+			url: 'juice.html',
+		},
+	];
+
+
+nav.nav
+	ul.menu
+		each sub in submenu
+			li.menu__item: a(href= sub.url class='menu__link links')= sub.title

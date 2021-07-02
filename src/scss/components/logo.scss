@@ -1,0 +1,18 @@
+.container-logo {
+	height: var(--header-height);
+	&__link {
+		display: block;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-decoration: none;
+		height: var(--header-height);
+		width: var(--header-height);
+	}
+
+	&__image {
+		display: block;
+		height: 90%;
+		border-radius: 50%;
+	}
+}

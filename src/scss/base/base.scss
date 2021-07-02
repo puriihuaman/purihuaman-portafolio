@@ -1,0 +1,43 @@
+/* Estilos base */
+body {
+	min-height: 100vh;
+	font-size: var(--normal-font-size);
+	color: var(--light-color500);
+	background-color: var(--dark-color500);
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: var(--header-height) 1fr auto;
+}
+
+.container-layout {
+	max-width: var(--width-layout);
+	margin-left: auto;
+	margin-right: auto;
+	height: 100%;
+	padding: 0 var(--normal-padding);
+	overflow: hidden;
+}
+
+// Header
+.main-header {
+	height: var(--header-height);
+	position: sticky;
+	top: 0;
+	background-color: var(--dark-color600);
+	box-shadow: 1px 1px 3px var(--dark-color300);
+	&__container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+}
+
+// Main
+.main {
+	background-color: var(--dark-color500);
+}
+
+// Footer
+.main-footer {
+	background-color: var(--dark-color600);
+}

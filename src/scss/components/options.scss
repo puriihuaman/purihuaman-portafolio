@@ -1,0 +1,14 @@
+.container-options {
+	display: flex;
+	align-items: center;
+	height: var(--header-height);
+
+	&__item {
+		height: 100%;
+		display: flex;
+		align-items: center;
+		padding: 0 var(--small-padding);
+		color: var(--light-color500);
+		cursor: pointer;
+	}
+}
