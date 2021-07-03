@@ -49,7 +49,7 @@
 	}
 	&__header,
 	&__head {
-		background-color: var(--first-color500);
+		background-color: var(--primary-color500);
 		z-index: var(--z-index200);
 		color: var(--light-color500);
 	}
@@ -60,7 +60,7 @@
 	}
 	&__row:hover .table__data {
 		color: var(--light-color500);
-		background-color: var(--first-color200);
+		background-color: var(--primary-color200);
 		-webkit-transition: background-color .3s;
 		-o-transition: background-color .3s;
 		transition: background-color .3s;

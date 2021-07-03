@@ -40,4 +40,7 @@ body {
 // Footer
 .main-footer {
 	background-color: var(--dark-color600);
+	&__content {
+		// background-color: green;
+	}
 }

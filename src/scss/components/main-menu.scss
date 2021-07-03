@@ -1,3 +1,7 @@
+$table-width: 768px;
+$desktop-width: 1024px;
+$large-desktop-width: 1280px;
+
 $header-height:  var(--header-height);
 
 .main-nav {
@@ -6,11 +10,11 @@ $header-height:  var(--header-height);
 	top: var(--header-height);
 	right: 0;
 	width: 80%;
-	min-height: 80vh;
+	min-height: 100vh;
 	transition: transform .3s;
 	transform: translateX(100%);
 	
-	@media screen and (min-width: 64rem) {
+	@media screen and (min-width: $desktop-width) {
 		position: relative;
 		top: 0;
 		width: 50%;
@@ -29,7 +33,7 @@ $header-height:  var(--header-height);
 .main-menu {
 	@include reset-list;
 
-	@media screen and (min-width: 64rem) {
+	@media screen and (min-width: $desktop-width) {
 		width: 100%;
 		display: flex;
 		justify-content: space-between;
@@ -37,9 +41,9 @@ $header-height:  var(--header-height);
 	}
 
 	&__item {
-		box-shadow: 1px 1px 3px var(--dark-color300);
+		box-shadow: 1px 1px 3px var(--dark-color400);
 		
-		@media screen and (min-width: 64rem) {
+		@media screen and (min-width: $desktop-width) {
 			flex: auto;
 			box-shadow: none;
 		}
@@ -50,7 +54,7 @@ $header-height:  var(--header-height);
 		padding-left: var(--normal-padding);
 		color: var(--light-color500);
 
-		@media screen and (min-width: 64rem) {
+		@media screen and (min-width: $desktop-width) {
 			display: block;
 			text-align: center;
 			padding-left: 0;

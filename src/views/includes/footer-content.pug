@@ -1,4 +1,10 @@
 block footer
-	h3 Informate más aquí
-	form.form(action="#")
-		input(type="text" placeholder='Correo Electronico')
+	.main-footer__content
+		.container-form
+			form.form(action="#" class='form')
+				h2.subtitle.form__title Contactame
+				input(type="text" placeholder='Correo Electronico' class='input form__input')
+				+button('#', 'Enviar correo', 'button form__button')
+
+		.copy-page
+			p.copy-page__text copyright D'Liz - 2021. Todos los derechos reservados.

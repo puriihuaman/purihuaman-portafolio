@@ -2,11 +2,11 @@
 	/* COLORS */
 	/* dark color */
 	--dark-color100: #315068;
-	--dark-color200: #1F3342;
-	--dark-color300: #203646;
+	--dark-color200: #203646;
+	--dark-color300: #1F3342;
 	--dark-color400: #1B2E3B;
-	--dark-color500: #162530;
-	--dark-color600: #192229;
+	--dark-color500: #101D29;
+	--dark-color600: #0B1522;
 
 	/* light color */
 	--light-color200: #e0e0e0;
@@ -15,11 +15,13 @@
 	--light-color500: #f5f5f5;
 	--light-color600: #d1d1d1;
 
-	--first-color200: #4db2ff;
-	--first-color300: #33A7FF;
-	--first-color400: #1A9CFF;
-	--first-color500: #0191ff;
-	--first-color600: #0082E6;
+	--primary-color100: #CEF5FE;
+	--primary-color200: #9FE6FD;
+	--primary-color300: #6ECFF9;
+	--primary-color400: #4AB7F4;
+	--primary-color500: #1192EE;
+	--primary-color600: #0C71CC;
+	--primary-color700: #0854AB;
 
 	/* Second color */
 	--second-color400: #E36F7B;
@@ -38,7 +40,7 @@
 
 	/* Fonts Family */
 	--heading-font: 'Raleway', sans-serif;
-	--body-font: 'Roboto', sans-serif;
+	--body-font: 'Open Sans', sans-serif;
 
 	/* Fonts size */
 	--h1-font-size: 2rem;
@@ -48,7 +50,7 @@
 	--small-font-size: 0.85rem;
 
 	/* Width layout */
-	--width-layout: 75rem;
+	--width-layout: 80rem;
 
 	/* Heights */
 	--header-height: 3rem;
@@ -82,8 +84,17 @@
 	--width-table: 1200px;
 	--height-table: 300px;
 	--frozen-width: 10rem;
+
+	/* Medidas de media querys */
+	--table-width: 48rem;
+	--desktop-width: 64rem;
+	--large-desktop-width: 80rem;
+
+	--table-width: 768px;
+	--desktop-width: 1024px;
+	--large-desktop-width: 1280px;
 	
-	@media screen and (min-width: 64rem) {
+	@media screen and (min-width: var(--desktop-width)) {
 		& {
 			/* Fonts size */
 			--h1-font-size: 2.5rem;

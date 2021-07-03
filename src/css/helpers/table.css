@@ -1,0 +1,54 @@
+/* Estilos de tablas */
+.table-container {
+  margin-top: 0.5rem;
+  height: var(--height-table);
+  overflow-x: auto;
+  position: relative;
+  width: 100%;
+  background-color: var(--light-color500);
+  border-radius: var(--border-radius);
+  -webkit-box-shadow: 0 0 0.1rem 0 var(--dark-color400), 0 0 0.1rem 0 var(--dark-color400);
+  box-shadow: 0 0 0.1rem 0 var(--dark-color400), 0 0 0.1rem 0 var(--dark-color400);
+}
+
+.table {
+  position: absolute;
+  height: auto;
+  font-size: var(--small-font-size);
+  color: var(--dark-color600);
+  min-width: var(--width-table);
+  border-collapse: collapse;
+  table-layout: fixed;
+  text-align: center;
+  background-color: var(--light-color500);
+}
+.table__head, .table__data {
+  padding: var(--small-padding);
+  -webkit-box-shadow: 0 0 1px var(--dark-color400);
+  box-shadow: 0 0 1px var(--dark-color400);
+}
+.table__data:nth-child(odd) {
+  background-color: var(--light-color200);
+}
+.table__header, .table__head, .table__data:first-child {
+  position: sticky;
+  left: 0;
+  top: 0;
+}
+.table__data:first-child {
+  background-color: var(--light-color200);
+}
+.table__header, .table__head {
+  background-color: var(--primary-color500);
+  z-index: var(--z-index200);
+  color: var(--light-color500);
+}
+.table__head:first-child {
+  z-index: var(--z-index300);
+}
+.table__row:hover .table__data {
+  color: var(--light-color500);
+  background-color: var(--primary-color200);
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}

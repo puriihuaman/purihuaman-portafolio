@@ -1,15 +1,19 @@
+$table-width: 768px;
+$desktop-width: 1024px;
+$large-desktop-width: 1280px;
+
 .banner {
 	margin-top: var(--normal-margin);
-	// min-height: 40vh;
 	max-height: 50vh;
 	background-color: yellow;
 	overflow: hidden;
 	transition: max-height .3s;
+	position: relative;
 
-	@media screen and (min-width: 48rem) {
+	@media screen and (min-width: $table-width) {
 		max-height: 65vh;
 	}
-	@media screen and (min-width: 64rem) {
+	@media screen and (min-width: $desktop-width) {
 		max-height: 80vh;
 	}
 	

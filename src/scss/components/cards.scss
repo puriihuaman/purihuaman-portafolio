@@ -1,15 +1,21 @@
 $height-image: 200px;
-$max-width-card: 300px;
+$max-width-card: 350px;
 $width-input-action: 100px;
-$width: 280px;
+$width: 300px;
+$table-width: 768px;
+$desktop-width: 1024px;
+$large-desktop-width: 1280px;
 
 .card-project {
+	display: flex;
+	flex-direction: column;
+
 	background-color: var(--dark-color600);
-	// max-width: $max-width-card;
-	width: $width;
+	min-width: $width;
+	max-width: $max-width-card;
 	padding: var(--normal-padding);
 	border-radius: var(--border-radius);
-	box-shadow: 1px 1px 3px var(--dark-color100);
+	box-shadow: 1px 1px 3px var(--dark-color400);
 
 	&__image{
 		height: $height-image;
@@ -20,12 +26,8 @@ $width: 280px;
 		object-fit: cover;
 		border-radius: var(--border-radius);
 	}
-
-	&__container {
-		// background-color: var(--dark-color400);
-		padding: var(--small-padding) 0;
-	}
 	&__content {
+		// background-color: green;
 	}
 	&__title,
 	&__description {
@@ -34,7 +36,17 @@ $width: 280px;
 	
 	&__action {
 		padding: var(--small-padding) 0;
+		
 		display: flex;
 		justify-content: space-evenly;
+		margin-top: auto;
+	}
+
+	// Botones
+	&__show {
+		color: var(--primary-color500);
+	}
+	&__dowload {
+		color: var(--four-color500);
 	}
 }
