@@ -23,6 +23,7 @@ body {
 	height: var(--header-height);
 	position: sticky;
 	top: 0;
+	z-index: var(--z-index300);
 	background-color: var(--dark-color600);
 	box-shadow: 1px 1px 3px var(--dark-color300);
 	&__container {
