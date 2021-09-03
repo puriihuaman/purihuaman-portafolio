@@ -100,12 +100,33 @@ $dark: var(--dark-color500);
 		&:hover .skills__details {
 			display: block;
 			position: absolute;
-			right: 0;
+			left: 0;
+			z-index: var(--z-index100);
+			
+			@media screen and (min-width: $desktop-width) {
+				right: 0;
+			}
 		}
 	}
 
 	&__image {
-		height: 80px;
+		height: 120px;
+		width: 100%;
+
+		@media screen and (min-width: $table-width) {
+			height: 150px;
+		}
+
+		@media screen and (min-width: $desktop-width) {
+			height: 120px;
+		}
+	}
+
+	&__img {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		height: 100%;
 	}
 
 	&__name {
@@ -118,11 +139,14 @@ $dark: var(--dark-color500);
 	&__details {
 		display: none;
 		width: 300px;
-		transform: translate(-35%, -40%);
-		transition: display 5s;
 		padding: var(--normal-padding);
 		background-color: var(--dark-color600);
 		border-radius: var(--border-radius);
+		
+		@media screen and (min-width: $desktop-width) {
+			transform: translate(-35%, -40%);
+			transition: display 5s;
+		}
 	}
 
 	&__details-title {
