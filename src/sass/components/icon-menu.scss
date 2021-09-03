@@ -17,7 +17,7 @@ $height-icon: 4px;
 		position: relative;
 		width: $width-icon;
 		height: $height-icon;
-		background-color: var(--light-color500);
+		background-color: var(--white-color500);
 		border-radius: var(--border-radius);
 		&::after,
 		&::before {
@@ -27,7 +27,7 @@ $height-icon: 4px;
 			display: block;
 			width: $width-icon;
 			height: $height-icon;
-			background-color: var(--light-color500);
+			background-color: var(--white-color500);
 			border-radius: var(--border-radius);
 		}
 		&::after {

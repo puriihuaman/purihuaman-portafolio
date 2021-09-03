@@ -9,11 +9,12 @@
 	--dark-color600: #0B1522;
 
 	/* light color */
-	--light-color200: #e0e0e0;
-	--light-color300: #e6e6e6;
-	--light-color400: #ededed;
-	--light-color500: #f5f5f5;
-	--light-color600: #d1d1d1;
+	--white-color200: #e0e0e0;
+	--white-color300: #e6e6e6;
+	--white-color400: #ededed;
+	--white-color500: #ffffff;
+	--white-color600: #f5f5f5;
+	--white-color700: #d1d1d1;
 
 	--primary-color100: #CEF5FE;
 	--primary-color200: #9FE6FD;
@@ -53,7 +54,7 @@
 	--width-layout: 80rem;
 
 	/* Heights */
-	--header-height: 3rem;
+	--header-height: 4rem;
 
 	/* Paddings */
 	--small-padding: 0.5rem;
@@ -104,7 +105,7 @@
 			--small-font-size: .95rem;
 	
 			/* Heights */
-			--header-height: 4rem;
+			--header-height: 4.5rem;
 		}
 	}
 }

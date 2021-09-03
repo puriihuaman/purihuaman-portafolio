@@ -1,0 +1,132 @@
+$table-width: 768px;
+$desktop-width: 1024px;
+$large-desktop-width: 1280px;
+$dark: var(--dark-color500);
+
+.about {
+	@media screen and (min-width: $desktop-width) {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: auto;
+		gap: var(--small-gap);
+		padding: var(--normal-padding) 0;
+	}
+}
+.biography {
+	padding: var(--normal-padding) 0;
+	&__name {
+		text-align: center;
+		font-size: var(--h1-font-size);
+		margin-bottom: 0;
+	}
+
+	&__occupation {
+		display: block;
+		text-align: center;
+		font-size: var(--small-font-size);
+		color: var(--white-color700);
+	}
+
+	&__info {
+		text-align: center;
+	}
+	
+	&__text {
+		@media screen and (min-width: $desktop-width) {
+			text-align: right;
+		}
+	}
+	&__link {
+		text-decoration: none;
+		color: var(--white-color500);
+	}
+
+	&__cv {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: var(--small-padding) 0;
+	}
+	
+	&__button {
+		text-align: center;
+		background-color: var(--second-color500);
+		border-color: var(--second-color500);
+	}
+}
+
+.photography {
+	padding: var(--small-padding);
+
+	&__container {
+		margin-left: auto;
+		margin-right: auto;
+		height: 250px;
+		width: 250px;
+		overflow: hidden;
+
+		@media screen and (min-width: $desktop-width) {
+			padding-top: var(--x-large-padding);
+		}
+	}
+	
+	&__image {
+		object-fit: cover;
+	}
+}
+
+.skills {
+	padding: var(--small-padding) 0;
+
+	&__title {
+		margin-top: var(--x-large-margin);
+	}
+
+	&__content {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: var(--small-gap);
+		padding: var(--small-padding);
+	}
+	
+	&__item {
+		position: relative;
+		padding: var(--small-padding);
+		background-color: var(--dark-color600);
+		box-shadow: 3px 3px 5px var(--dark-color500), -3px -3px 5px var(--dark-color500);
+		border-radius: var(--border-radius);
+		cursor: pointer;
+
+		&:hover .skills__details {
+			display: block;
+			position: absolute;
+			right: 0;
+		}
+	}
+
+	&__image {
+		height: 80px;
+	}
+
+	&__name {
+		display: block;
+		font-size: var(--small-font-size);
+		text-align: center;
+		color: var(--white-color700);
+	}
+
+	&__details {
+		display: none;
+		width: 300px;
+		transform: translate(-35%, -40%);
+		transition: display 5s;
+		padding: var(--normal-padding);
+		background-color: var(--dark-color600);
+		border-radius: var(--border-radius);
+	}
+
+	&__details-title {
+		text-align: center;
+		margin-top: var(--small-margin);
+	}
+}

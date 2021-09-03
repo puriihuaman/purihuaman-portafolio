@@ -52,7 +52,7 @@ $header-height:  var(--header-height);
 	&__link {
 		line-height: 3;
 		padding-left: var(--normal-padding);
-		color: var(--light-color500);
+		color: var(--white-color500);
 
 		@media screen and (min-width: $desktop-width) {
 			display: block;

@@ -1,5 +1,5 @@
-block config
-	include config
+//- block config
+//- include ./config
 
 include ../mixin/button
 include ../mixin/project
@@ -10,10 +10,9 @@ html(lang="es")
 		meta(charset="UTF-8")
 		meta(http-equiv="X-UA-Compatible", content="IE=edge")
 		meta(name="viewport", content="width=device-width, initial-scale=1.0")
-		meta(name="description" content= metaDescription)
-		title= `${pageTitle} - ${siteName}`
+		meta(name="description" content="PEDRO PURIHUAMAN")
+		title="Bienvenid@s - PEDRO PURIHUAMAN"
 		link(rel="shortcut icon", href="./assets/icons/logo-puri.svg", type="image/x-icon")
-		link(rel="stylesheet", href="./css/styles.css")
 	body
 		header.main-header
 			.container-layout
@@ -28,15 +27,13 @@ html(lang="es")
 						.iconMenu__icon
 
 
-
 		main.main
 			.container-layout
 				block banner
-				block projects
+				block about
+				//- block projects
 
 		footer.main-footer
 			.container-layout
 				block footer
 					include footer-content
-
-		script(src="./js/scripts.js")
