@@ -13,11 +13,15 @@ $dark: var(--dark-color500);
 	}
 }
 .biography {
-	padding: var(--normal-padding) 0;
+	padding: var(--normal-padding) var(--small-padding);
 	&__name {
 		text-align: center;
 		font-size: var(--h1-font-size);
-		margin-bottom: 0;
+		margin: 0 auto;
+
+		@media screen and (min-width: $desktop-width) {
+			text-align: right;
+		}
 	}
 
 	&__occupation {
@@ -25,6 +29,10 @@ $dark: var(--dark-color500);
 		text-align: center;
 		font-size: var(--small-font-size);
 		color: var(--white-color700);
+
+		@media screen and (min-width: $desktop-width) {
+			text-align: right;
+		}
 	}
 
 	&__info {
@@ -56,30 +64,37 @@ $dark: var(--dark-color500);
 }
 
 .photography {
-	padding: var(--small-padding);
+	background-color: red;
+	padding: var(--normal-padding) 0;
 
 	&__container {
-		margin-left: auto;
-		margin-right: auto;
-		height: 250px;
-		width: 250px;
-		overflow: hidden;
+		height: 350px;
+		background-color: blue;
+		padding-top: var(--small-padding);
+		// margin-left: auto;
+		// margin-right: auto;
+		// height: 500px;
+		// width: 280px;
+		// overflow: hidden;
 
-		@media screen and (min-width: $desktop-width) {
-			padding-top: var(--x-large-padding);
-		}
+		// @media screen and (min-width: $desktop-width) {
+		// 	padding-top: var(--x-large-padding);
+		// }
 	}
 	
 	&__image {
 		object-fit: cover;
+		width: 100%;
+		height: 100%;
+		filter: grayscale(1);
 	}
 }
 
 .skills {
-	padding: var(--small-padding) 0;
+	padding: var(--normal-padding) 0;
 
 	&__title {
-		margin-top: var(--x-large-margin);
+		margin-top: 0;
 	}
 
 	&__content {
@@ -118,8 +133,8 @@ $dark: var(--dark-color500);
 	}
 
 	&__image {
-		height: 120px;
-		width: 100%;
+		height: 100px;
+		padding: var(--small-padding);
 
 		@media screen and (min-width: $table-width) {
 			height: 150px;
