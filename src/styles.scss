@@ -1,7 +1,7 @@
 // Estilos Base
 @import 'sass/base/variables';
-@import 'sass/base/base';
 @import 'sass/base/my-normalize';
+@import 'sass/base/base';
 
 // Mixins
 @import 'sass/mixins/button';
@@ -13,13 +13,11 @@
 // Componentes
 @import 'sass/components/icon-menu';
 @import 'sass/components/main-menu';
-@import 'sass/components/titles';
+@import 'sass/components/logo';
 @import 'sass/components/banner';
 @import 'sass/components/about';
-@import 'sass/components/logo';
-@import 'sass/components/cards';
-@import 'sass/components/cards';
 @import 'sass/components/projects';
+@import 'sass/components/cards';
 @import 'sass/components/form';
 
 // Helpers

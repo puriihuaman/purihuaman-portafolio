@@ -33,7 +33,7 @@ $large-desktop-width: 1280px;
 	&__input {
 		width: 100%;
 		margin-bottom: var(--large-margin);
-		font-size: var(--normal-font-size);
+		font-size: var(--small-font-size);
 	}
 
 	&__button {
@@ -48,6 +48,6 @@ $large-desktop-width: 1280px;
 .copy-page {
 	&__text {
 		text-align: center;
-		font-size: var(--small-font-size);
+		font-size: var(--normal-font-size);
 	}
 }

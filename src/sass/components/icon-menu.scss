@@ -2,12 +2,14 @@ $width-icon: 28px;
 $height-icon: 4px;
 
 .iconMenu {
-	height: 30px;
-	width: 30px;
+	height: 40px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	cursor: pointer;
+	padding: var(--small-padding);
+	background-color: var(--primary-color500);
+	border-radius: var(--border-radius);
 
 	@media screen and (min-width: 64rem) {
 		display: none;
@@ -23,7 +25,7 @@ $height-icon: 4px;
 		&::before {
 			content: '';
 			position: absolute;
-			top: 8px;
+			top: 9px;
 			display: block;
 			width: $width-icon;
 			height: $height-icon;
@@ -31,7 +33,7 @@ $height-icon: 4px;
 			border-radius: var(--border-radius);
 		}
 		&::after {
-			top: -8px;
+			top: -9px;
 		}
 	}
 }

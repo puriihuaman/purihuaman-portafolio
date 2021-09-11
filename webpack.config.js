@@ -1,4 +1,7 @@
-const HtmlWebpackPlugin = require("html-webpack-plugin"),
+const path = require("path"),
+			basePath = __dirname,
+			distPath = "dist",
+			HtmlWebpackPlugin = require("html-webpack-plugin"),
 			MiniCssExtractPlugin  = require("mini-css-extract-plugin");
 
 module.exports = {
@@ -32,9 +35,15 @@ module.exports = {
 		new HtmlWebpackPlugin({
 			template: "./src/index.pug",
 			filename: "./index.html",
+			scriptLoading: "blocking",
 		}),
 		new MiniCssExtractPlugin({
 			filename: 'styles.css'
 		}),
 	],
+	// Output point
+	output: {
+		path: path.join( basePath, distPath),
+		filename: "scripts.js"
+	}
 }

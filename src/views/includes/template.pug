@@ -14,9 +14,9 @@ html(lang="es")
 		title="Bienvenid@s - PEDRO PURIHUAMAN"
 		link(rel="shortcut icon", href="./assets/icons/logo-puri.svg", type="image/x-icon")
 	body
-		header.main-header
-			.container-layout
-				.main-header__container
+		header.header
+			.container
+				.header__container
 					.container-logo
 						a(href="./").container-logo__link
 							img(src="./assets/icons/logo-puri.svg", alt="logotipo Pedro Purihuaman" class='container-logo__image')
@@ -28,12 +28,12 @@ html(lang="es")
 
 
 		main.main
-			.container-layout
-				block banner
+			block banner
+			.container
 				block about
 				block projects
 
-		footer.main-footer
-			.container-layout
+		footer.footer
+			.container
 				block footer
 					include footer-content

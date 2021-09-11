@@ -1,28 +1,26 @@
 :root {
 	/* COLORS */
 	/* dark color */
-	--dark-color100: #315068;
-	--dark-color200: #203646;
-	--dark-color300: #1F3342;
-	--dark-color400: #1B2E3B;
-	--dark-color500: #101D29;
-	--dark-color600: #0B1522;
+	--dark-color100: hsl(0, 0%, 50%);
+	--dark-color200: hsl(0, 0%, 40%);
+	--dark-color300: hsl(0, 0%, 30%);
+	--dark-color400: hsl(0, 0%, 20%);
+	--dark-color500: hsl(0, 0%, 10%);
 
 	/* light color */
-	--white-color200: #e0e0e0;
-	--white-color300: #e6e6e6;
-	--white-color400: #ededed;
-	--white-color500: #ffffff;
-	--white-color600: #f5f5f5;
-	--white-color700: #d1d1d1;
+	--white-color100: hsl(0, 0%, 76%);
+	--white-color200: hsl(0, 0%, 82%);
+	--white-color300: hsl(0, 0%, 88%);
+	--white-color400: hsl(0, 0%, 94%);
+	--white-color500: hsl(0, 0%, 100%);
 
-	--primary-color100: #CEF5FE;
-	--primary-color200: #9FE6FD;
-	--primary-color300: #6ECFF9;
-	--primary-color400: #4AB7F4;
-	--primary-color500: #1192EE;
-	--primary-color600: #0C71CC;
-	--primary-color700: #0854AB;
+	--primary-color100: hsl(191, 96%, 90%);
+	--primary-color200: hsl(195, 96%, 81%);
+	--primary-color300: hsl(198, 92%, 70%);
+	--primary-color400: hsl(202, 89%, 62%);
+	--primary-color500: hsl(205, 87%, 50%);
+	--primary-color600: hsl(208, 89%, 42%);
+	--primary-color700: hsl(212, 91%, 35%);
 
 	/* Second color */
 	--second-color400: #E36F7B;
@@ -40,7 +38,7 @@
 	--four-color600: #22990b;
 
 	/* Fonts Family */
-	--heading-font: 'Raleway', sans-serif;
+	--heading-font: 'Roboto', sans-serif;
 	--body-font: 'Open Sans', sans-serif;
 
 	/* Fonts size */
@@ -95,7 +93,7 @@
 	--desktop-width: 1024px;
 	--large-desktop-width: 1280px;
 	
-	@media screen and (min-width: var(--desktop-width)) {
+	@media screen and (min-width: 1024px) {
 		& {
 			/* Fonts size */
 			--h1-font-size: 2.5rem;

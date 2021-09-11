@@ -7,9 +7,11 @@ block about
 	include ./views/includes/about
 
 block projects
-	section.container-projects
-		h2.subtitle#Proyectos Proyectos
-		section.projects
+	section.projects.full--screen#Proyectos
+		header.projects__header
+			h2.projects__title Proyectos
+
+		section.projects__content
 			+card('car.jpg', 'Tienda Ecommers', 'Tienda hecho en php, jquery y MySql.')
 			+card('code.jpg', 'Punto de venta (POS)', 'Tienda hecho en php, con el framework CodeIgnater, jquery y MySql.')
 			+card('pc.jpg', 'Tienda Ecommers', 'Tienda hecho en php, jquery y MySql.')

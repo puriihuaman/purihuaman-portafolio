@@ -4,12 +4,15 @@ $large-desktop-width: 1280px;
 $dark: var(--dark-color500);
 
 .about {
+	padding: var(--normal-padding);
+	
 	@media screen and (min-width: $desktop-width) {
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
 		grid-template-rows: auto;
-		gap: var(--small-gap);
-		padding: var(--normal-padding) 0;
+		align-content: center;
+		gap: var(--normal-gap);
+		padding: var(--small-padding);
 	}
 }
 .biography {
@@ -58,28 +61,22 @@ $dark: var(--dark-color500);
 	
 	&__button {
 		text-align: center;
-		background-color: var(--second-color500);
-		border-color: var(--second-color500);
+		background-color: var(--primary-color500);
+		border-color: var(--primary-color600);
+
+		&:hover {
+			background-color: transparent;
+			color: var(--primary-color500);
+		}
 	}
 }
 
 .photography {
-	background-color: red;
 	padding: var(--normal-padding) 0;
 
 	&__container {
-		height: 350px;
-		background-color: blue;
+		height: 450px;
 		padding-top: var(--small-padding);
-		// margin-left: auto;
-		// margin-right: auto;
-		// height: 500px;
-		// width: 280px;
-		// overflow: hidden;
-
-		// @media screen and (min-width: $desktop-width) {
-		// 	padding-top: var(--x-large-padding);
-		// }
 	}
 	
 	&__image {
@@ -93,87 +90,48 @@ $dark: var(--dark-color500);
 .skills {
 	padding: var(--normal-padding) 0;
 
+	&__header {
+		padding-bottom: var(--normal-padding);
+	}
 	&__title {
 		margin-top: 0;
+		text-align: center;
+
+		@media screen and (min-width: $desktop-width) {
+			text-align: left;
+		}
 	}
 
 	&__content {
 		display: grid;
-		grid-template-columns: repeat(3, 1fr);
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-rows: 132px;
 		gap: var(--small-gap);
-		padding: var(--small-padding);
 	}
 	
 	&__item {
-		position: relative;
-		padding: var(--small-padding);
-		background-color: var(--dark-color600);
-		box-shadow: 3px 3px 5px var(--dark-color500), -3px -3px 5px var(--dark-color500);
+		background-color: var(--dark-color400);
 		border-radius: var(--border-radius);
-		cursor: pointer;
-
-		&:hover .skills__details {
-			display: block;
-			position: absolute;
-			left: 0;
-			z-index: var(--z-index100);
-			
-			@media screen and (min-width: $desktop-width) {
-				right: 0;
-			}
-		}
-
-		&:nth-child(3):hover .skills__details,
-		&:nth-child(6):hover .skills__details {
-			transform: translate(-155px, -40px);
-			@media screen and (min-width: $desktop-width) {
-				transform: translate(-195px, -60px);
-			}
-		}
+		padding: var(--small-padding) 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-wrap: wrap;
 	}
 
 	&__image {
-		height: 100px;
-		padding: var(--small-padding);
-
-		@media screen and (min-width: $table-width) {
-			height: 150px;
-		}
-
-		@media screen and (min-width: $desktop-width) {
-			height: 120px;
-		}
+		height: 80px;
+		width: 100%;
 	}
 
 	&__img {
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
 		height: 100%;
+		width: 100%;
 	}
 
 	&__name {
 		display: block;
-		font-size: var(--small-font-size);
 		text-align: center;
-		color: var(--white-color700);
-	}
-
-	&__details {
-		display: none;
-		width: 300px;
-		padding: var(--normal-padding);
-		background-color: var(--dark-color600);
-		border-radius: var(--border-radius);
-		
-		@media screen and (min-width: $desktop-width) {
-			transform: translate(-35%, -40%);
-			transition: display 5s;
-		}
-	}
-
-	&__details-title {
-		text-align: center;
-		margin-top: var(--small-margin);
+		color: var(--white-color300);
 	}
 }
