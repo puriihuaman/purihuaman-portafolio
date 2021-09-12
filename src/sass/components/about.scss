@@ -4,15 +4,15 @@ $large-desktop-width: 1280px;
 $dark: var(--dark-color500);
 
 .about {
-	padding: var(--normal-padding);
-	
+	padding: var(--x-large-padding) var(--normal-padding);
+
 	@media screen and (min-width: $desktop-width) {
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
 		grid-template-rows: auto;
 		align-content: center;
+		justify-content: space-between;
 		gap: var(--normal-gap);
-		padding: var(--small-padding);
 	}
 }
 .biography {
@@ -31,7 +31,7 @@ $dark: var(--dark-color500);
 		display: block;
 		text-align: center;
 		font-size: var(--small-font-size);
-		color: var(--white-color700);
+		color: var(--white-color300);
 
 		@media screen and (min-width: $desktop-width) {
 			text-align: right;
@@ -49,7 +49,7 @@ $dark: var(--dark-color500);
 	}
 	&__link {
 		text-decoration: none;
-		color: var(--white-color500);
+		color: var(--primary-color500);
 	}
 
 	&__cv {
@@ -88,11 +88,10 @@ $dark: var(--dark-color500);
 }
 
 .skills {
-	padding: var(--normal-padding) 0;
+	padding: var(--normal-padding) var(--small-padding);
 
-	&__header {
-		padding-bottom: var(--normal-padding);
-	}
+	&__header {}
+
 	&__title {
 		margin-top: 0;
 		text-align: center;
@@ -104,7 +103,7 @@ $dark: var(--dark-color500);
 
 	&__content {
 		display: grid;
-		grid-template-columns: repeat(4, 1fr);
+		grid-template-columns: repeat(3, 1fr);
 		grid-template-rows: 132px;
 		gap: var(--small-gap);
 	}
@@ -120,7 +119,7 @@ $dark: var(--dark-color500);
 	}
 
 	&__image {
-		height: 80px;
+		height: 70px;
 		width: 100%;
 	}
 

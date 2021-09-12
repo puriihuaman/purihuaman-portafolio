@@ -1,6 +1,6 @@
 $height-image: 200px;
-$min-width-card: 275px;
-$max-width-card: 295px;
+$min-width-card: 270px;
+$max-width-card: 290px;
 
 $width-input-action: 100px;
 $width: 300px;
@@ -14,16 +14,8 @@ $large-desktop-width: 1280px;
 	min-width: $min-width-card;
 	max-width: $max-width-card;
 	padding: var(--normal-padding);
-
-	// display: flex;
-	// flex-direction: column;
-
-	// background-color: var(--dark-color400);
-	// min-width: $width;
-	// max-width: $max-width-card;
-	// padding: var(--normal-padding);
-	// border-radius: var(--border-radius);
-	// box-shadow: 1px 1px 3px var(--dark-color400);
+	display: grid;
+	align-content: space-between;
 
 	&__image{
 		height: $height-image;
@@ -34,15 +26,14 @@ $large-desktop-width: 1280px;
 		object-fit: cover;
 		border-radius: var(--border-radius);
 	}
-	&__content {
-		// background-color: green;
-	}
+	&__content { }
 	&__title,
 	&__description {
 		text-align: center;
 	}
 	
 	&__action {
+		margin-top: auto;
 		padding: var(--small-padding) 0;
 		
 		display: flex;
@@ -53,8 +44,20 @@ $large-desktop-width: 1280px;
 	// Botones
 	&__show {
 		color: var(--primary-color500);
+		
+		&:hover {
+			color: var(--white-color500); 
+			border-color: var(--primary-color500); 
+			background-color: var(--primary-color500);
+		}
 	}
 	&__dowload {
-		color: var(--four-color500);
+		color: var(--third-color500);
+		
+		&:hover {
+			color: var(--white-color500); 
+			border-color: var(--third-color500); 
+			background-color: var(--third-color500);
+		}
 	}
 }

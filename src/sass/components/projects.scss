@@ -1,8 +1,8 @@
-$min-width-card: 275px;
-$max-width-card: 295px;
+$min-width-card: 270px;
+$max-width-card: 290px;
 
 .projects {
-	padding-bottom: var(--normal-padding);
+	padding: var(--x-large-padding) 0;
 
 	&__header {
 		padding: var(--small-padding) 0;

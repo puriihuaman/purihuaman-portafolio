@@ -23,29 +23,29 @@ body {
 	position: sticky;
 	top: 0;
 	z-index: var(--z-index300);
-	background-color: var(--dark-color400);
 	height: var(--header-height);
-	padding: 0 var(--normal-padding);
 
 	&__container {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 	}
-
-	@media screen and (min-width: $desktop-width) {
-		padding: 0 var(--small-padding);
-	}
 }
 
 // Main
-.main {
-	background-color: var(--dark-color500);
-}
+.main { }
 
 // Footer
+.footer { }
+
+.header,
 .footer {
+	padding: 0 var(--normal-padding);
 	background-color: var(--dark-color400);
+	
+	@media screen and (min-width: $desktop-width) {
+		padding: 0 var(--small-padding);
+	}
 }
 
 .full--screen {
