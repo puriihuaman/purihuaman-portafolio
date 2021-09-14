@@ -23,7 +23,7 @@
 	$form.addEventListener('submit', ( ev ) => {
 		ev.preventDefault();
 		$loader.classList.add("form__loader--show");
-		fetch('https://formsubmit.com/ajax/purihuamanpurihuamanpedro@gmail.com', {
+		fetch('https://formsubmit.co/ajax/purihuamanpurihuamanpedro@gmail.com', {
 			method: 'POST',
 			body: new FormData( ev.target )
 		})
