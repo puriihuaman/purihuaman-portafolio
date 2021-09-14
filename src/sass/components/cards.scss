@@ -52,12 +52,12 @@ $large-desktop-width: 1280px;
 		}
 	}
 	&__dowload {
-		color: var(--third-color500);
+		color: var(--second-color500);
 		
 		&:hover {
 			color: var(--white-color500); 
-			border-color: var(--third-color500); 
-			background-color: var(--third-color500);
+			border-color: var(--second-color500); 
+			background-color: var(--second-color500);
 		}
 	}
 }

@@ -1,10 +1,42 @@
 block footer
-	.main-footer__content#Contacto
+	.footer__content#Contacto
+		header.footer__header
+			h2.footer__title Contáctame
+
+		section.footer__networks
+			.networks__item
+				.networks__image
+				h3.networks__title Teléfono
+				a(href="#") (+51) 963420132
+
+			.networks__item
+				.networks__image
+				h3.networks__title Email
+				a(href="maito:purihuamanpurihuamanpedro@gmail.com") purihuamanpurihuamanpedro@gmail.com
+
+			.networks__item
+				.networks__image
+				h3.networks__title Social Media
+				a(href="#") (+51) 963420132
+
 		.container-form
 			form.form(action="#" class='form')
-				h2.subtitle.form__title Contactame
-				input(type="text" placeholder='Correo Electronico' class='input form__input')
+				.form__header
+					.form__field
+						input(type="text" name="name" title="Nombre sólo aceptan letras y espacios en blanco" pattern="" required placeholder='Ingresa tu nombre' class='input form__input')
+
+					.form__field
+						input(type="text" name="email" title="Email incorrecto" pattern="" required placeholder='Ingresa tu correo *' class='input form__input')
+
+				.form__field.form__textarea
+					textarea(name="", cols="30", rows="10" class="input form__input" required placeholder="Déjame tu mensaje *")
+
+				.form__field.form__loader
+					img(src="#", alt="Enviado...").form__loader--img
+
 				+button('#', 'Enviar correo', 'button form__button')
+
+			article#thank.modal
 
 		.copy-page
 			p.copy-page__text

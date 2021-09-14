@@ -36,7 +36,12 @@ body {
 .main { }
 
 // Footer
-.footer { }
+.footer {
+
+	&__title {
+		text-align: center;
+	}
+}
 
 .header,
 .footer {

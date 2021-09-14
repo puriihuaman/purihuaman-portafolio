@@ -1,39 +1,55 @@
-$widht-form: 500px;
+$width-form: 600px;
 
 $table-width: 768px;
 $desktop-width: 1024px;
 $large-desktop-width: 1280px;
 
 .container-form {
-	margin-top: var(--normal-padding);
+	padding: var(--x-large-padding) var(--normal-padding);
 	margin-left: auto;
 	margin-right: auto;
 	
 	background-color: var(--dark-color500);
-	padding: var(--normal-padding);
-	border-radius: var(--border-radius);
-	
+	border-radius: calc(var(--border-radius) * 2);
+
 	@media screen and (min-width: $table-width) {
-		width: $widht-form;
+		width: $width-form;
 	}
 }
 
 .form {
-	border-radius: var(--border-radius);
 	padding: var(--normal-padding);
 	transition: max-width .3s;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
 
-	&__title {
-		text-align: center;
+	&__header {
+		@media screen and (min-width: $desktop-width) {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding-bottom: var(--normal-padding);
+		}
 	}
+
+	&__field {
+		@media screen and (min-width: $desktop-width) {
+			width: 48%;
+		}
+	}
+
+	&__textarea {
+		width: 100%;
+		margin-bottom: var(--large-margin);
+	}
+
 	&__input {
+		display: block;
 		width: 100%;
 		margin-bottom: var(--large-margin);
 		font-size: var(--small-font-size);
+
+		@media screen and (min-width: $desktop-width) {
+			margin-bottom: 0;
+		}
 	}
 
 	&__button {
