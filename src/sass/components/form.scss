@@ -38,17 +38,31 @@ $large-desktop-width: 1280px;
 
 	&__textarea {
 		width: 100%;
-		margin-bottom: var(--large-margin);
+		margin-bottom: var(--normal-margin);
+	}
+	
+	&__area {
+		resize: none;
 	}
 
 	&__input {
 		display: block;
 		width: 100%;
-		margin-bottom: var(--large-margin);
+		margin-bottom: var(--normal-margin);
 		font-size: var(--small-font-size);
 
 		@media screen and (min-width: $desktop-width) {
 			margin-bottom: 0;
+		}
+	}
+
+	&__loader {
+		padding: var(--small-padding);
+		padding-top: 0;
+		display: none;
+
+		&--show {
+			display: block;
 		}
 	}
 

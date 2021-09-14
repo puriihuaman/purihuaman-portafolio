@@ -18,14 +18,18 @@
 	--primary-color200: hsl(195, 96%, 81%);
 	--primary-color300: hsl(198, 92%, 70%);
 	--primary-color400: hsl(202, 89%, 62%);
-	--primary-color500: hsl(205, 87%, 50%);
-	--primary-color600: hsl(208, 89%, 42%);
-	--primary-color700: hsl(212, 91%, 35%);
+	--primary-color500: hsl(216, 98%, 52%);
+	--primary-color600: hsl(215, 98%, 48%);
 
 	/* Second color */
-	--second-color400: #E36F7B;
-	--second-color500: #ec4052;
-	--second-color600: #d63343;
+	// --second-color400: #E36F7B;
+	// --second-color500: #ec4052;
+	// --second-color600: #d63343;
+	--second-color400: hsl(253, 100%, 76%);
+	--second-color500: hsl(253, 100%, 71%);
+	--second-color600: hsl(253, 100%, 66%);
+	// --second-color500: #8B0BFC;
+
 
 	/* Third color */
 	--third-color400: #FFC14D;
