@@ -1,0 +1,51 @@
+.modal-project {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: var(--z-index300);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	opacity: 0;
+	pointer-events: none;
+	transition: opacity .3s;
+	background-color: var(--dark-colorRGBA);
+
+	&[id|="proyecto"]:target {
+		opacity: 1;
+		pointer-events: auto;
+	}
+
+	
+	&__content {
+		position: relative;
+		width: 320px;
+		background-color: var(--dark-color400);
+		padding: var(--normal-padding);
+		border-radius: var(--border-radius);
+	}
+
+	&__close {
+		position: absolute;
+		right: var(--small-margin);
+		top: var(--small-margin);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: calc( var(--small-padding) - 5px);
+		border-color: var(--primary-color500);
+		background-color: var(--primary-color500);
+	}
+	
+	&__icon {
+		height: 24px;
+		fill: var(--white-color500);
+	}
+
+	&__title {
+		margin-top: var(--x-large-margin);
+		text-align: center;
+	}
+}

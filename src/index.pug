@@ -12,10 +12,21 @@ block projects
 			h2.projects__title Proyectos
 
 		section.projects__content
-			+card('car.jpg', 'Tienda Ecommers', 'Tienda hecho en php, jquery y MySql.')
-			+card('code.jpg', 'Punto de venta (POS)', 'Tienda hecho en php, con el framework CodeIgnater, jquery y MySql.')
-			+card('pc.jpg', 'Tienda Ecommers', 'Tienda hecho en php, jquery y MySql.')
-			+card('car.jpg', 'Punto de venta (POS)', 'Tienda hecho en php, jquery y MySql.')
-			+card('work.jpg', 'Tienda Ecommers', 'Tienda hecho en php, jquery y MySql.')
-			+card('car.jpg', 'Punto de venta (POS)', 'Tienda hecho en php, jquery y MySql.')
-			+card('code.jpg', 'Punto de venta (POS)', 'Tienda hecho en php, jquery y MySql.')
+			+card('proyecto-1', 'car.jpg', 'Tienda Ecommers', 'Tienda hecho en php, jquery y MySql.')
+			+card('proyecto-2', 'code.jpg', 'Punto de venta (POS)', 'Tienda hecho en php, con el framework CodeIgnater, jquery y MySql.')
+			+card('proyecto-3', 'pc.jpg', 'Tienda Ecommers', 'Tienda hecho en php, jquery y MySql.')
+			+card('proyecto-4', 'car.jpg', 'Punto de venta (POS)', 'Tienda hecho en php, jquery y MySql.')
+			+card('proyecto-5', 'work.jpg', 'Tienda Ecommers', 'Tienda hecho en php, jquery y MySql.')
+			+card('proyecto-6', 'car.jpg', 'Punto de venta (POS)', 'Tienda hecho en php, jquery y MySql.')
+			+card('proyecto-7', 'work.jpg', 'Punto de venta (POS)', 'Tienda hecho en php, jquery y MySql.')
+			+card('proyecto-8', 'pc.jpg', 'Tienda Ecommers', 'Tienda hecho en php, jquery y MySql.')
+
+block modal
+	+modalProject('proyecto-1', 'Tienda Ecommers')
+	+modalProject('proyecto-2', 'Punto de venta')
+	+modalProject('proyecto-3', 'Tienda Ecommers')
+	+modalProject('proyecto-4', 'Punto de venta')
+	+modalProject('proyecto-5', 'Tienda Ecommers')
+	+modalProject('proyecto-6', 'Punto de venta')
+	+modalProject('proyecto-7', 'Tienda Ecommers')
+	+modalProject('proyecto-8', 'Punto de venta')

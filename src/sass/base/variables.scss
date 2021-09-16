@@ -6,6 +6,7 @@
 	--dark-color300: hsl(0, 0%, 30%);
 	--dark-color400: hsl(0, 0%, 20%);
 	--dark-color500: hsl(0, 0%, 10%);
+	--dark-colorRGBA: rgb(26, 26, 26, .5);
 
 	/* light color */
 	--white-color100: hsl(0, 0%, 76%);
@@ -13,6 +14,7 @@
 	--white-color300: hsl(0, 0%, 88%);
 	--white-color400: hsl(0, 0%, 94%);
 	--white-color500: hsl(0, 0%, 100%);
+	--white-colorRGBA: rgb(255, 255, 255, .5);
 
 	--primary-color100: hsl(191, 96%, 90%);
 	--primary-color200: hsl(195, 96%, 81%);
@@ -20,6 +22,7 @@
 	--primary-color400: hsl(202, 89%, 62%);
 	--primary-color500: hsl(216, 98%, 52%);
 	--primary-color600: hsl(215, 98%, 48%);
+	--primary-colorRGBA: rgb(13, 109, 253, .5);
 
 	/* Second color */
 	// --second-color400: #E36F7B;
@@ -28,6 +31,7 @@
 	--second-color400: hsl(253, 100%, 76%);
 	--second-color500: hsl(253, 100%, 71%);
 	--second-color600: hsl(253, 100%, 66%);
+	--second-colorRGBA: rgb(139, 107, 255, .5);
 	// --second-color500: #8B0BFC;
 
 
