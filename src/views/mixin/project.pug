@@ -3,7 +3,7 @@ include button
 mixin card( id, image, title, description )
 	a(href=`#${id}`).card-project
 		.card-project__image
-			img(src=`./assets/image/${image}`, alt="Trabajo 1" class='card-project__img')
+			img(src=`./assets/image/${image}`, alt=`${description}` class='card-project__img')
 
 		article.card-project__content
 			.card-project__info

@@ -21,10 +21,15 @@
 	
 	&__content {
 		position: relative;
-		width: 320px;
+		width: 300px;
 		background-color: var(--dark-color400);
 		padding: var(--normal-padding);
 		border-radius: var(--border-radius);
+		transition: width .3s;
+
+		@media screen and(min-width: $table-width){
+			width: 600px;
+		}
 	}
 
 	&__close {
@@ -44,8 +49,51 @@
 		fill: var(--white-color500);
 	}
 
-	&__title {
+	&__info {
 		margin-top: var(--x-large-margin);
+
+		
+		@media screen and(min-width: $table-width) {
+			display: flex;
+			justify-content: space-between;
+		}
+	}
+
+	&__image {
+		height: 200px;
+		width: 100%;
+		object-fit: cover;
+		border-radius: var(--border-radius);
+	}
+
+	&__description {
+		@media screen and(min-width: $table-width) {
+			padding-left: var(--normal-padding);
+		}
+	}
+
+	&__title {
 		text-align: center;
+
+		@media screen and(min-width: $table-width) {
+			margin-top: 0;
+		}
+	}
+}
+
+// Detalles del proyecto
+.details {
+	font-size: var(--normal-font-size);
+
+	&__info {
+		display: block;
+		display: flex;
+		padding: var(--small-padding) 0;
+	}
+
+	&__title {
+		width: 20%;
+		margin-right: var(--normal-margin);
+		color: var(--primary-color500);
 	}
 }

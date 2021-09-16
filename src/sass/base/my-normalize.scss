@@ -18,7 +18,8 @@ img {
 }
 
 a {
-	display:inline-block
+	display:inline-block;
+	color: var(--primary-color500);
 }
 
 html {
