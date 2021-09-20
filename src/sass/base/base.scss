@@ -1,6 +1,8 @@
 $table-width: 768px;
 $desktop-width: 1024px;
-$large-desktop-width: 1280px;
+$large-desktop-width: 1400px;
+
+
 /* Estilos base */
 body {
 	display: grid;
@@ -13,7 +15,7 @@ body {
 }
 
 .container {
-	max-width: var(--large-desktop-width);
+	max-width: $large-desktop-width;
 	margin-left: auto;
 	margin-right: auto;
 }

@@ -1,6 +1,11 @@
 $width-icon: 28px;
 $height-icon: 4px;
 
+$table-width: 768px;
+$desktop-width: 1024px;
+$large-desktop-width: 1400px;
+
+
 .iconMenu {
 	height: 40px;
 	display: flex;
@@ -11,7 +16,7 @@ $height-icon: 4px;
 	background-color: var(--primary-color500);
 	border-radius: var(--border-radius);
 
-	@media screen and (min-width: 64rem) {
+	@media screen and (min-width: $desktop-width) {
 		display: none;
 	}
 

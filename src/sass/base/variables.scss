@@ -1,19 +1,25 @@
 :root {
+	/* Medidas de media querys */
+	$table-width: 768px;
+	$desktop-width: 1024px;
+	$large-desktop-width: 1400px;
+
+
 	/* COLORS */
 	/* dark color */
-	--dark-color100: hsl(0, 0%, 50%);
-	--dark-color200: hsl(0, 0%, 40%);
-	--dark-color300: hsl(0, 0%, 30%);
-	--dark-color400: hsl(0, 0%, 20%);
+	--dark-color100: hsl(0, 0%, 51%);
+	--dark-color200: hsl(0, 0%, 41%);
+	--dark-color300: hsl(0, 0%, 31%);
+	--dark-color400: hsl(0, 0%, 21%);
 	--dark-color500: hsl(0, 0%, 10%);
 	--dark-colorRGBA: rgb(26, 26, 26, .5);
 
 	/* light color */
-	--white-color100: hsl(0, 0%, 76%);
-	--white-color200: hsl(0, 0%, 82%);
-	--white-color300: hsl(0, 0%, 88%);
-	--white-color400: hsl(0, 0%, 94%);
-	--white-color500: hsl(0, 0%, 100%);
+	--white-color100: hsl(0, 0%, 74%);
+	--white-color200: hsl(0, 0%, 80%);
+	--white-color300: hsl(0, 0%, 86%);
+	--white-color400: hsl(0, 0%, 92%);
+	--white-color500: hsl(0, 0%, 98%);
 	--white-colorRGBA: rgb(255, 255, 255, .5);
 
 	--primary-color100: hsl(191, 96%, 90%);
@@ -25,9 +31,6 @@
 	--primary-colorRGBA: rgb(13, 109, 253, .5);
 
 	/* Second color */
-	// --second-color400: #E36F7B;
-	// --second-color500: #ec4052;
-	// --second-color600: #d63343;
 	--second-color400: hsl(253, 100%, 76%);
 	--second-color500: hsl(253, 100%, 71%);
 	--second-color600: hsl(253, 100%, 66%);
@@ -92,20 +95,8 @@
 	--height-table: 300px;
 	--frozen-width: 10rem;
 
-	/* Medidas de media querys */
-	--table-width: 48rem;
-	--desktop-width: 64rem;
-	--large-desktop-width: 80rem;
-
-	--table-width: 768px;
-	--desktop-width: 1024px;
-	--large-desktop-width: 1280px;
-
-	$table-width: 768px;
-	$desktop-width: 1024px;
-	$large-desktop-width: 1280px;
 	
-	@media screen and (min-width: 1024px) {
+	@media screen and (min-width: $desktop-width) {
 		& {
 			/* Fonts size */
 			--h1-font-size: 2.5rem;
