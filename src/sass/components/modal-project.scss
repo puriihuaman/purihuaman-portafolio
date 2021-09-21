@@ -65,14 +65,16 @@ $large-desktop-width: 1400px;
 	}
 
 	&__image {
-		height: 200px;
-		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+		height: 250px;
 		object-fit: cover;
 		border-radius: var(--border-radius);
 	}
 
 	&__description {
 		@media screen and(min-width: $table-width) {
+			width: 60%;
 			padding-left: var(--normal-padding);
 		}
 	}
