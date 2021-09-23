@@ -1,27 +1,24 @@
 $secondColor: var(--second-color500);
-$height-image: 280px;
-$min-width-card: 270px;
-$max-width-card: 290px;
 
 $width-input-action: 100px;
-$width: 300px;
 
 .card-project {
 	position: relative;
 	display: block;
 	text-decoration: none;
-	min-width: $min-width-card;
-	max-width: $max-width-card;
+	width: var(--width-card);
 	background-color: var(--dark-color400);
 	border-radius: var(--border-radius);
 	overflow: hidden;
+	box-shadow: var(--box-shadow);
 
 	&:hover .card-project__content {
 		opacity: 1;
 		pointer-events: auto;
 	}
 
-	&__image{ height: $height-image;}
+	&__image{ height: var(--height-image); }
+
 	&__img {
 		height: 100%;
 		width: 100%;

@@ -6,7 +6,7 @@ $large-desktop-width: 1400px;
 
 
 .about {
-	padding: var(--x-large-padding) var(--normal-padding);
+	padding: var(--normal-padding) 0;
 
 	@media screen and (min-width: $desktop-width) {
 		display: grid;
@@ -51,7 +51,7 @@ $large-desktop-width: 1400px;
 	}
 	&__link {
 		text-decoration: none;
-		color: var(--primary-color500);
+		color: var(--primary-color400);
 	}
 
 	&__cv {

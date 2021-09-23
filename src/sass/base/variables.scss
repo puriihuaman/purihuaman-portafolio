@@ -11,14 +11,14 @@
 	--dark-color200: hsl(0, 0%, 41%);
 	--dark-color300: hsl(0, 0%, 31%);
 	--dark-color400: hsl(0, 0%, 21%);
-	--dark-color500: hsl(0, 0%, 10%);
+	--dark-color500: hsl(0, 0%, 13%);
 	--dark-colorRGBA: rgb(26, 26, 26, .5);
 
 	/* light color */
-	--white-color100: hsl(0, 0%, 74%);
-	--white-color200: hsl(0, 0%, 80%);
-	--white-color300: hsl(0, 0%, 86%);
-	--white-color400: hsl(0, 0%, 92%);
+	--white-color100: hsl(0, 0%, 68%);
+	--white-color200: hsl(0, 0%, 74%);
+	--white-color300: hsl(0, 0%, 82%);
+	--white-color400: hsl(0, 0%, 90%);
 	--white-color500: hsl(0, 0%, 98%);
 	--white-colorRGBA: rgb(255, 255, 255, .5);
 
@@ -35,7 +35,6 @@
 	--second-color500: hsl(253, 100%, 71%);
 	--second-color600: hsl(253, 100%, 66%);
 	--second-colorRGBA: rgb(139, 107, 255, .6);
-	// --second-color500: #8B0BFC;
 
 
 	/* Third color */
@@ -94,6 +93,13 @@
 	--width-table: 1200px;
 	--height-table: 300px;
 	--frozen-width: 10rem;
+
+	// Medidas de las tarjetas de proyectos
+	--height-image: 320px;
+	--width-card: 240px;
+
+	// Box-shadow
+	--box-shadow: 5px 0 8px var(--dark-color300);
 
 	
 	@media screen and (min-width: $desktop-width) {

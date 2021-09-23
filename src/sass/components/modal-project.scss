@@ -67,11 +67,12 @@ $large-desktop-width: 1400px;
 	&__image {
 		margin-left: auto;
 		margin-right: auto;
-		height: 250px;
+		height: var(--height-image);
 		object-fit: cover;
+		border: 1px solid var(--white-color500);
 		border-radius: var(--border-radius);
 	}
-
+	
 	&__description {
 		@media screen and(min-width: $table-width) {
 			width: 60%;

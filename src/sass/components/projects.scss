@@ -1,17 +1,10 @@
-$min-width-card: 270px;
-$max-width-card: 290px;
-
 $table-width: 768px;
 $desktop-width: 1024px;
 $large-desktop-width: 1400px;
 
 
 .projects {
-	padding: var(--x-large-padding) 0;
-
-	&__header {
-		padding: var(--small-padding) 0;
-	}
+	padding: var(--normal-padding) 0;
 
 	&__title {
 		text-align: center;
@@ -20,14 +13,8 @@ $large-desktop-width: 1400px;
 	&__content {
 		display: grid;
 		justify-content: center;
+		grid-template-columns: repeat(auto-fit, minmax(var(--width-card), 0));
 		gap: var(--normal-gap);
-		
-		@media screen and (min-width: $table-width) {
-			grid-template-columns: repeat(auto-fit, minmax($min-width-card, $max-width-card));
-		}
-		@media screen and (min-width: $desktop-width) {
-			grid-template-columns: repeat(auto-fit, minmax($min-width-card, $max-width-card));
-			gap: var(--small-gap);
-		}
+		padding: var(--normal-padding) 0;
 	}
 }

@@ -3,6 +3,7 @@ $desktop-width: 1024px;
 $large-desktop-width: 1400px;
 
 
+
 /* Estilos base */
 body {
 	display: grid;
@@ -26,6 +27,7 @@ body {
 	top: 0;
 	z-index: var(--z-index300);
 	height: var(--header-height);
+	background-color: var(--dark-color400);
 
 	&__container {
 		display: flex;
@@ -39,6 +41,7 @@ body {
 
 // Footer
 .footer {
+	background-color: var(--dark-color400);
 
 	&__title {
 		text-align: center;
@@ -46,19 +49,11 @@ body {
 }
 
 .header,
-.footer {
+.footer,
+.main {
 	padding: 0 var(--normal-padding);
-	background-color: var(--dark-color400);
-	
+
 	@media screen and (min-width: $desktop-width) {
 		padding: 0 var(--small-padding);
-	}
-}
-
-.full--screen {
-	width: 100%;
-
-	@media screen and (min-width: $desktop-width) {
-		min-height: 100vh;
 	}
 }
