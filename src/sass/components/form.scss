@@ -76,6 +76,7 @@ $large-desktop-width: 1400px;
 }
 
 .copy-page {
+	padding: var(--normal-padding) 0;
 	color: var(--grey-200);
 	&__text {
 		text-align: center;
