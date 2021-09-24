@@ -6,7 +6,7 @@ $large-desktop-width: 1400px;
 
 
 .main-nav {
-	background-color: var(--dark-color400);
+	background-color: var(--grey-800);
 	position: fixed;
 	top: var(--header-height);
 	right: 0;
@@ -43,7 +43,7 @@ $large-desktop-width: 1400px;
 	}
 
 	&__item {
-		box-shadow: 1px 1px 2px var(--dark-color100);
+		box-shadow: 1px 1px 2px var(--grey-700);
 
 		@media screen and (min-width: $desktop-width) {
 			flex: auto;
@@ -56,10 +56,10 @@ $large-desktop-width: 1400px;
 		line-height: var(--header-height);
 		font-family: var(--heading-font);
 		padding-left: var(--normal-padding);
-		color: var(--white-color500);
+		color: var(--grey-200);
 
 		&:hover {
-			color: var(--primary-color500);
+			color: var(--primary-500);
 		}
 
 		@media screen and (min-width: $desktop-width) {

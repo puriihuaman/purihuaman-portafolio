@@ -4,38 +4,34 @@
 	$desktop-width: 1024px;
 	$large-desktop-width: 1400px;
 
-
 	/* COLORS */
-	/* dark color */
-	--dark-color100: hsl(0, 0%, 51%);
-	--dark-color200: hsl(0, 0%, 41%);
-	--dark-color300: hsl(0, 0%, 31%);
-	--dark-color400: hsl(0, 0%, 21%);
-	--dark-color500: hsl(0, 0%, 13%);
-	--dark-colorRGBA: rgb(26, 26, 26, .5);
+	--grey-100: #fbfbfe;
+	--grey-200: #fcfcfc;
+	--grey-300: #eff3f5;
+	--grey-400: #c8cdd0;
+	--grey-500: #a0a7ac;
+	--grey-600: #697477;
+	--grey-700: #2a3b47;
+	--grey-800: #22303a;
+	--grey-900: #1a252d;
+	--grey-RGBA: rgb(26, 37, 45, .5);
 
-	/* light color */
-	--white-color100: hsl(0, 0%, 68%);
-	--white-color200: hsl(0, 0%, 74%);
-	--white-color300: hsl(0, 0%, 82%);
-	--white-color400: hsl(0, 0%, 90%);
-	--white-color500: hsl(0, 0%, 98%);
-	--white-colorRGBA: rgb(255, 255, 255, .5);
-
-	--primary-color100: hsl(191, 96%, 90%);
-	--primary-color200: hsl(195, 96%, 81%);
-	--primary-color300: hsl(198, 92%, 70%);
-	--primary-color400: hsl(202, 89%, 62%);
-	--primary-color500: hsl(216, 98%, 52%);
-	--primary-color600: hsl(215, 98%, 48%);
-	--primary-colorRGBA: rgb(13, 109, 253, .5);
+	--primary-100: #e7f4fd;
+	--primary-200: #b7defa;
+	--primary-300: #88c8f7;
+	--primary-400: #58b3f3;
+	--primary-500: #1192ee;
+	--primary-600: #1083d5;
+	--primary-700: #0c66a6;
+	--primary-800: #094977;
+	--primary-900: #052c48;
+	--primary-RGBA: rgb(17, 146, 238, .5);
 
 	/* Second color */
-	--second-color400: hsl(253, 100%, 76%);
-	--second-color500: hsl(253, 100%, 71%);
-	--second-color600: hsl(253, 100%, 66%);
-	--second-colorRGBA: rgb(139, 107, 255, .6);
-
+	--second-400: hsl(253, 100%, 76%);
+	--second-500: hsl(253, 100%, 71%);
+	--second-600: hsl(253, 100%, 66%);
+	--second-RGBA: rgb(139, 107, 255, .3);
 
 	/* Third color */
 	--third-color400: #FFC14D;
@@ -99,7 +95,7 @@
 	--width-card: 240px;
 
 	// Box-shadow
-	--box-shadow: 5px 0 8px var(--dark-color300);
+	--box-shadow: 5px 0 8px var(--grey-600);
 
 	
 	@media screen and (min-width: $desktop-width) {

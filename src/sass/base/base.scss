@@ -11,8 +11,8 @@ body {
 	grid-template-rows: auto 1fr auto;
 	min-height: 100vh;
 	font-size: var(--normal-font-size);
-	color: var(--white-color500);
-	background-color: var(--dark-color500);
+	color: var(--grey-100);
+	background-color: var(--grey-900);
 }
 
 .container {
@@ -27,7 +27,7 @@ body {
 	top: 0;
 	z-index: var(--z-index300);
 	height: var(--header-height);
-	background-color: var(--dark-color400);
+	background-color: var(--grey-800);
 
 	&__container {
 		display: flex;
@@ -41,7 +41,7 @@ body {
 
 // Footer
 .footer {
-	background-color: var(--dark-color400);
+	background-color: var(--grey-800);
 
 	&__title {
 		text-align: center;

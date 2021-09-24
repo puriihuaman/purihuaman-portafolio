@@ -13,7 +13,7 @@ $large-desktop-width: 1400px;
 	align-items: center;
 	cursor: pointer;
 	padding: var(--small-padding);
-	background-color: var(--primary-color500);
+	background-color: var(--primary-500);
 	border-radius: var(--border-radius);
 
 	@media screen and (min-width: $desktop-width) {
@@ -24,7 +24,7 @@ $large-desktop-width: 1400px;
 		position: relative;
 		width: $width-icon;
 		height: $height-icon;
-		background-color: var(--white-color500);
+		background-color: var(--grey-200);
 		border-radius: var(--border-radius);
 		&::after,
 		&::before {
@@ -34,7 +34,7 @@ $large-desktop-width: 1400px;
 			display: block;
 			width: $width-icon;
 			height: $height-icon;
-			background-color: var(--white-color500);
+			background-color: var(--grey-200);
 			border-radius: var(--border-radius);
 		}
 		&::after {

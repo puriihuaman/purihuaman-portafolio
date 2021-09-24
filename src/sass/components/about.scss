@@ -33,7 +33,7 @@ $large-desktop-width: 1400px;
 		display: block;
 		text-align: center;
 		font-size: var(--small-font-size);
-		color: var(--white-color300);
+		color: var(--grey-400);
 
 		@media screen and (min-width: $desktop-width) {
 			text-align: right;
@@ -51,7 +51,7 @@ $large-desktop-width: 1400px;
 	}
 	&__link {
 		text-decoration: none;
-		color: var(--primary-color400);
+		color: var(--primary-400);
 	}
 
 	&__cv {
@@ -63,12 +63,12 @@ $large-desktop-width: 1400px;
 	
 	&__button {
 		text-align: center;
-		background-color: var(--primary-color500);
-		border-color: var(--primary-color600);
+		background-color: var(--primary-500);
+		border-color: var(--primary-500);
 
 		&:hover {
 			background-color: transparent;
-			color: var(--primary-color500);
+			color: var(--primary-600);
 		}
 	}
 }
@@ -88,7 +88,7 @@ $large-desktop-width: 1400px;
 		width: 80%;
 		height: 100%;
 		object-fit: cover;
-		filter: grayscale(1);
+		// filter: grayscale(1);
 		border-radius: var(--border-radius);
 	}
 }
@@ -114,7 +114,7 @@ $large-desktop-width: 1400px;
 	}
 	
 	&__item {
-		background-color: var(--dark-color400);
+		background-color: var(--grey-800);
 		border-radius: var(--border-radius);
 		padding: var(--small-padding) 0;
 		display: flex;
@@ -137,5 +137,6 @@ $large-desktop-width: 1400px;
 	&__name {
 		display: block;
 		text-align: center;
+		color: var(--grey-400);
 	}
 }

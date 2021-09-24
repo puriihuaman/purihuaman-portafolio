@@ -16,7 +16,7 @@ $large-desktop-width: 1400px;
 	opacity: 0;
 	pointer-events: none;
 	transition: opacity .3s;
-	background-color: var(--dark-colorRGBA);
+	background-color: var(--grey-RGBA);
 
 	&[id|="proyecto"]:target {
 		opacity: 1;
@@ -27,7 +27,7 @@ $large-desktop-width: 1400px;
 	&__content {
 		position: relative;
 		width: 300px;
-		background-color: var(--dark-color400);
+		background-color: var(--grey-800);
 		padding: var(--normal-padding);
 		border-radius: var(--border-radius);
 		transition: width .3s;
@@ -45,13 +45,13 @@ $large-desktop-width: 1400px;
 		align-items: center;
 		justify-content: center;
 		padding: calc( var(--small-padding) - 5px);
-		border-color: var(--primary-color500);
-		background-color: var(--primary-color500);
+		background-color: var(--primary-500);
+		border-color: var(--primary-500);
 	}
 	
 	&__icon {
 		height: 24px;
-		fill: var(--white-color500);
+		fill: var(--grey-200);
 	}
 
 	&__info {
@@ -69,7 +69,7 @@ $large-desktop-width: 1400px;
 		margin-right: auto;
 		height: var(--height-image);
 		object-fit: cover;
-		border: 1px solid var(--white-color500);
+		border: 1px solid var(--grey-400);
 		border-radius: var(--border-radius);
 	}
 	
@@ -102,6 +102,6 @@ $large-desktop-width: 1400px;
 	&__title {
 		width: 20%;
 		margin-right: var(--normal-margin);
-		color: var(--primary-color500);
+		color: var(--primary-500);
 	}
 }

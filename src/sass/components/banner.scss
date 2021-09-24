@@ -14,7 +14,7 @@
 		text-align: center;
 		width: 100%;
 		min-height: 100vh;
-		background-color: rgba(0, 0, 0, .8);
+		background-color: var(--grey-RGBA);
 	}
 
 	&__content {}
@@ -23,9 +23,9 @@
 }
 
 .button--contact {
-	background-color: var(--primary-color500);
-	border-color: var(--primary-color500);
+	background-color: var(--primary-500);
+	border-color: var(--primary-500);
 }
 .button--contact:hover {
-	background-color: var(--primary-color600);
+	background-color: var(--primary-600);
 }
