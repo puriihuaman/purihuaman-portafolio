@@ -1,9 +1,3 @@
-$table-width: 768px;
-$desktop-width: 1024px;
-$large-desktop-width: 1400px;
-
-
-
 /* Estilos base */
 body {
 	display: grid;
@@ -16,7 +10,7 @@ body {
 }
 
 .container {
-	max-width: $large-desktop-width;
+	max-width: 1400px;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -53,7 +47,7 @@ body {
 .main {
 	padding: 0 var(--normal-padding);
 
-	@media screen and (min-width: $desktop-width) {
+	@media screen and (min-width: 1024px) {
 		padding: 0 var(--small-padding);
 	}
 }
