@@ -1,7 +1,4 @@
-$table-width: 768px;
-$desktop-width: 1024px;
-$large-desktop-width: 1400px;
-
+$width-card: var(--width-card);
 
 .projects {
 	padding: var(--normal-padding) 0;
@@ -13,7 +10,7 @@ $large-desktop-width: 1400px;
 	&__content {
 		display: grid;
 		justify-content: center;
-		grid-template-columns: repeat(auto-fit, minmax(var(--width-card), 0));
+		grid-template-columns: repeat(auto-fit, minmax($width-card, auto));
 		gap: var(--normal-gap);
 		padding: var(--normal-padding) 0;
 	}
