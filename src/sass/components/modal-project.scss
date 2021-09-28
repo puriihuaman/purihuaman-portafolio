@@ -56,7 +56,6 @@ $large-desktop-width: 1400px;
 
 	&__info {
 		margin-top: var(--x-large-margin);
-
 		
 		@media screen and(min-width: $table-width) {
 			display: flex;
@@ -64,7 +63,9 @@ $large-desktop-width: 1400px;
 		}
 	}
 
-	&__image {
+	&__image {}
+
+	&__img {
 		margin-left: auto;
 		margin-right: auto;
 		height: var(--height-image);
